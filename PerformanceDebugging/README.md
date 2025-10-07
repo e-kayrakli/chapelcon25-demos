@@ -42,3 +42,8 @@
    `time ./envDemo1 --n=100_000_000`
 
 ### Experiment 3 -- Understanding Bottlenecks
+
+
+### Further Reading
+- Take a look at StencilDist -- it can reduce the communication even further and
+  improve performance & scalability.

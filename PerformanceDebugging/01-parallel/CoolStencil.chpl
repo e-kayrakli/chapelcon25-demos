@@ -11,7 +11,7 @@ const DataDomain = {1..n, 1..n};
 var Data: [DataDomain] real;
 
 // initialize the data
-for (i, j) in Data.domain {
+forall (i, j) in Data.domain {
   Data[i, j] = sin(i*pi)/j;
 }
 
@@ -21,7 +21,7 @@ stencilTimer.start();
 
 
 // run a 5-point stencil
-for (i, j) in {2..n-1, 2..n-1} {
+forall (i, j) in {2..n-1, 2..n-1} {
   OutData[i, j] = (               Data[i-1, j] +
                    Data[i, j-1] + Data[i  , j] + Data[i, j+1] +
                                   Data[i+1, j]                  ) / 5;

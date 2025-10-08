@@ -20,3 +20,15 @@ directories have gradually evolving code to achieve performance and scalability.
 
 - `04-scalable`: This fixes the seemingly innocent bad practice we've had since
   `01-parallel`. This is the version that should scale.
+
+## My Environment
+
+I will use Chapel 2.6 on two different systems for this set of codes:
+
+- **Desktop:** Single-socket Intel i5-11400 @ 2.60GHz with 6-cores
+- **Supercomputer:**
+  - HPE Apollo configuration
+  - InfiniBand HDR 200 GB/s interconnect
+  - Dual-socket Xeon 8360Y CPU @ 2.40GHz with 72-cores per socket
+  - 512 GB DDR4-3200 memory per node
+  - Up to 65 nodes (number of nodes I will use will depend on availability)
